@@ -21,7 +21,7 @@ public class MiniMap : MonoBehaviour
         Vector2 worldMax = worldMaxPoint.position;
 
         // Normalize position within world bounds
-        float nx = Mathf.InverseLerp(worldMin.x, worldMax.x, pos.x); 
+        float nx = Mathf.InverseLerp(worldMin.x, worldMax.x, pos.x);
         float ny = Mathf.InverseLerp(worldMin.y, worldMax.y, pos.y);
 
         // Map normalized position to mini-map UI coordinates
